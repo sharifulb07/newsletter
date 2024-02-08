@@ -1,0 +1,114 @@
+@font-face {
+  font-family: MyFont;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: MyFont;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-slate-grey);
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  padding: 40px;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+.left {
+  width: 60%;
+  padding: 0px 20px;
+}
+.left h1 {
+  font-size: 50px;
+}
+.left p {
+}
+ul {
+  list-style-image: url(./assets/images/icon-list.svg);
+}
+li {
+  margin-bottom: 5px;
+}
+
+.left input {
+}
+
+.btn .container {
+}
+.right {
+  width: 40%;
+}
+.right img {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+input {
+  font-family: inherit;
+  padding: 10px 20px;
+  margin-top: 10px;
+  outline: none;
+  border: 1px solid var(--dark-slate-grey);
+  border-radius: 5px;
+}
+
+.btn {
+  margin-top: 20px;
+  font-family: inherit;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: var(--white);
+  background-color: var(--charcoal-grey);
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.card {
+  background-color: white;
+  width: 400px;
+  padding: 40px;
+  border-radius: 30px;
+}
+.card img {
+  width: 50px;
+}
+
+.card h2 {
+  font-size: 50px;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1;
+}
+.card p {
+  font-size: 14px;
+}
+.card button {
+  width: 100%;
+}
